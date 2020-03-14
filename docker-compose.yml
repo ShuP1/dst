@@ -1,0 +1,25 @@
+version: '2'
+
+volumes:
+  data:
+    driver: local
+
+services:
+  dst:
+    build: .
+    restart: always
+    container_name: dst
+    environment:
+      - DST_FILTER_LABEL=fr.wadza.dst.visible=true
+      - DST_NAME_LABEL=fr.wadza.dst.name
+      - DST_URL_LABEL=fr.wadza.dst.url
+    labels:
+      - fr.wadza.dst.visible=true
+      - fr.wadza.dst.name=Status
+      - fr.wadza.dst.url=https://status.wadza.fr
+    volumes:
+      - data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    mem_limit: 512m
+    mem_reservation: 128m
+    memswap_limit: 0
