@@ -11,17 +11,18 @@ DST_PATH | Files output | `/data`
 DST_INTERVAL | Update interval is seconds | `30`
 DST_FILTER_LABEL | Filter visible containers with label | `False`
 DST_NAME_LABEL | Override container name with label | `False`
+DST_GROUP_LABEL | Group containers by label | `False`
 DST_URL_LABEL | Provide url with label | `False`
 DST_TITLE | Page title | `Docker Status`
 DST_CAPTION | Page caption
 
 ## TODO
 
-[x] Json periodic static
-[ ] Static Front
-[ ] Groups
-[ ] Events
-[ ] Gotify
+- [x] Json periodic static
+- [x] Static Front
+- [x] Groups
+- [ ] Events
+- [ ] Gotify
 
 ## Licence
 Distributed under the GPL3 license.
