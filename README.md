@@ -20,3 +20,6 @@ DST_URL_LABEL | Provide url with label | `False`
 [ ] Groups
 [ ] Events
 [ ] Gotify
+
+## Licence
+Distributed under the GPL3 license.
