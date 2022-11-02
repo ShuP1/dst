@@ -2,7 +2,7 @@ FROM python:3-alpine
 
 ADD dst.py /
 
-RUN pip install docker
+RUN pip install docker six
 
 VOLUME [ "/data" ]
 
